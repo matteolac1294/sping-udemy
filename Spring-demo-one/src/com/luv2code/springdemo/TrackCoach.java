@@ -1,6 +1,8 @@
 package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
+	
+	
 
 	@Override
 	public String getDailyWorkout() {
@@ -9,8 +11,17 @@ public class TrackCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return "track luck";
 	}
 
+	
+	public void build() {
+		System.out.println("building object");
+	}
+	
+	public void destroy() {
+		System.out.println("destroying object");
+	}
+	
 }
