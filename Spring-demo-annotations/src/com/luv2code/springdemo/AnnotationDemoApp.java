@@ -7,12 +7,19 @@ public class AnnotationDemoApp {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-		Coach tcoach = context.getBean("happytenniscoach", TennisCoach.class);
+		// Coach tcoach = context.getBean("happytenniscoach", TennisCoach.class);
 
-		Coach bcoach = context.getBean("baseballCoach", BaseballCoach.class);
+		// Coach bcoach = context.getBean("baseballCoach", BaseballCoach.class);
 
-		System.out.println(tcoach.getDaylyWorout());
+		// System.out.println(tcoach.getDaylyWorout());
 
-		System.out.println(bcoach.getDaylyWorout());
+		// System.out.println(bcoach.getDaylyWorout());
+		// System.out.println(tcoach.getDailyFortune());
+
+		// System.out.println(bcoach.getDailyFortune());
+
+		CricketCoach cCoach = context.getBean("cricketCoach", CricketCoach.class);
+
+		System.out.println(cCoach.getDailyFortune());
 	}
 }
